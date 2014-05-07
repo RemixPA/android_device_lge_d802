@@ -17,10 +17,8 @@
 $(call inherit-product-if-exists, vendor/lge/d802/d802-vendor.mk)
 $(call inherit-product, device/lge/g2-common/g2.mk)
 
-##Kernel
- LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 
-## overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 
